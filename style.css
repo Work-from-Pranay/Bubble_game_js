@@ -1,0 +1,94 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+.main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    background: #ad5389;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to left, #3c1053, #ad5389);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to left, #3c1053, #ad5389);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+#panel{
+    height: 80%;
+    width: 80%;
+    border-radius: 10px;
+    background-color: #3e0f5780;
+    overflow: hidden;
+}
+
+#ptop{
+    background-color: #331443d8;
+    height: 100px;
+    width: 100%;
+    display: flex;
+    padding: 0 20%;
+    justify-content: space-between;
+    color: wheat;
+}
+
+.elem{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+.box{
+    padding: 10px 20px;
+    border-radius: 5x;
+    background-color: wheat;
+    color: #3c1053;
+    font-weight: 600;
+    font-size: 22px;
+    border-radius: 5px;
+}
+.elem h2{
+    font-size: 20px;
+}
+
+#pbtm{
+    width: 100%;
+    height:calc(100% - 100px);
+    padding: 20px;
+    gap: 10px;
+    position: relative;
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.bubble{
+    height: 50px;
+    width: 50px;
+    background-color: wheat;
+    border-radius: 50%;
+    color: #3c1053;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 600;
+}
+.bubble:hover{
+    background-color: rgb(201, 173, 122);
+    cursor: pointer;
+}
+
+#over{
+    color: wheat;
+    opacity: 0;
+    left: 614px;
+    font-size: 50px;
+    bottom: 20px;
+    transition: all 1.5s ease ;
+    position: absolute;
+    height: 50%;
+    width: 50%;
+}
